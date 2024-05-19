@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ZombicideCustom - Custom maps and challenges for the Zombicide board game. Discover new adventures and enhance your gameplay experience.">
-    <meta name="keywords" content="Zombicide, board game, custom maps, challenges, BossFight, NekroRush, tutorial, Car Drifting, Two Builds">
+    <meta name="description"
+        content="ZombicideCustom - Custom maps and challenges for the Zombicide board game. Discover new adventures and enhance your gameplay experience.">
+    <meta name="keywords"
+        content="Zombicide, board game, custom maps, challenges, BossFight, NekroRush, tutorial, Car Drifting, Two Builds">
     <meta name="author" content="KralicekGamer">
     <title>Zombicide Custom</title>
     <link rel="stylesheet" href="./frontend/css/style.css">
@@ -20,10 +23,14 @@
             <div class="wrapper-about-us">
                 <h2>About us</h2>
                 <p>
-                    Welcome to our world of Zombicide! We are a team of creative enthusiasts who specialize in creating scenarios for this amazing board game. We are the only ones in the world dedicated to this art, and our passion for Zombicide has brought us together for four years.
+                    Welcome to our world of Zombicide! We are a team of creative enthusiasts who specialize in creating
+                    scenarios for this amazing board game. We are the only ones in the world dedicated to this art, and
+                    our passion for Zombicide has brought us together for four years.
                 </p>
                 <p>
-                    Our stories are the product of years of friendship and shared experiences. A board game circle led us to this game, and we haven't stopped creating new and exciting scenarios since. We're here to take you into a world where survival depends on strategy, courage, and cooperation.
+                    Our stories are the product of years of friendship and shared experiences. A board game circle led
+                    us to this game, and we haven't stopped creating new and exciting scenarios since. We're here to
+                    take you into a world where survival depends on strategy, courage, and cooperation.
                 </p>
                 <p>
                     Huge thanks to nmzi who created bgmapeditor for Zombicide which allowed us to do what we do.
@@ -36,7 +43,7 @@
                 <h2>Our maps</h2>
                 <ol>
                     <li class="wrapper-maps-click" data-url="bossfight.html">BossFight</li>
-                    <li class="wrapper-maps-click" data-url="nekrorush.html">NekroRush</li>
+                    <li class="wrapper-maps-click" data-url="necrorush.html">NecroRush</li>
                     <li class="wrapper-maps-click" data-url="tutorial.html">Tutorial</li>
                     <li class="wrapper-maps-click" data-url="pickyourchallenge.html">Pick Your Challenge</li>
                     <li class="wrapper-maps-click" data-url="cardrifting.html">Car Drifting</li>
@@ -50,7 +57,7 @@
                 <a href="https://instagram.com/zombicide_custom">
                     Instagram
                 </a>
-                <a href="https://github.com/kralicekgamer/zombicide_custom"> 
+                <a href="https://github.com/kralicekgamer/zombicide_custom">
                     GitHub
                 </a>
             </div>
@@ -62,7 +69,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const clickableTexts = document.querySelectorAll('.wrapper-maps-click');
-            
+
             clickableTexts.forEach(text => {
                 text.addEventListener('click', () => {
                     const url = text.getAttribute('data-url');
@@ -77,4 +84,5 @@
         }
     </script>
 </body>
+
 </html>
