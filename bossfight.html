@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,66 +7,52 @@
     <meta name="keywords" content="Zombicide, board game, custom maps, challenges, BossFight, strategy">
     <meta name="author" content="KralicekGamer">
     <title>ZombicideCustom - BossFight</title>
-    <link rel="stylesheet" href="./frontend/css/style.css">
     <link rel="icon" type="image/x-icon" href="./frontend/images/icon.png">
+    <link rel="stylesheet" href="./frontend/css/style.css">    
 </head>
-
-<body class="map-page">
-    <div class="web">
-        <div class="header" onclick="home()">
-            <h1>ZombicideCustom</h1>
-        </div>
-        <div class="wrapper">
-            <div class="wrapper-map">
-                <h2>BossFight</h2>
-                <h3>Targets</h3>
-                <p>Objectives must be met in the following order</p>
-                <ol>
-                    <li>Collect all targets. Kill the green and blue necromancer. Kill the monster</li>
-                    <li>Destroy all spawns</li>
-                    <li>
-                        At least one player must be in the red the other in the orange level
-                    </li>
-                </ol>
-
-                <h3>Special rules</h3>
-                <ul>
-                    <li>Survivor gets 5 points for each objective</li>
-                    <li>You roll a die when destroying a spawn (1-3 hit, 4-6 miss)</li>
-                    <li>The monster can never disappear (it always spawns on center when killed)</li>
-                    <li>Necromancer spawns work like normal spawns on necromancers, except there are no zombies to spawn
-                    </li>
-                    <li>Blue and green doors can only be opened after killing two necromancers</li>
-                    <li>Necromancer cannot spawn naturally (or remove their cards from the zombie card deck)</li>
-                    <li>When a blue/green target is picked up, the blue/green necromancer in that necromancer spawn will
-                        automatically spawn (the necromancer goes to that colored zombie spawn)</li>
-                    <li>Each boss (monster and necromancer) have double life and damage</li>
-                </ul>
-
-                <h3>Preparation</h3>
-                <ul>
-                    <li>Games: Zombicide Black Plague, Zombicide Green Horde</li>
-                </ul>
-                <ol>
-                    <li>Assemble the game plan 12V, 5R, 8V, 4R, 6R, 7R, 17V. 9V, 13R</li>
-                    <li>Prepare tokens (spawn doors, etc.)</li>
-                    <li>Prepare monster and trebuchet</li>
-                    <li>Shuffle and prepare targets (1 blue 1 green + 3 red)</li>
-                </ol>
-                <img src="./frontend/images/bossfight.png" alt="BossFight map">
-                <a href="frontend/download/[CZ]BossFight.pdf" download>BossFight - CZ</a>
-                <a href="frontend/download/[EN]BossFight.pdf" download>BossFight - EN</a>
-            </div>
-        </div>
-        <div class="footer">
-            <p>&copy; 2024 by KralicekGamer</p>
-        </div>
-    </div>
-    <script>
-        function home() {
-            window.location.href = 'index.html';
-        }
-    </script>
+<body>
+    <header>
+        <h1><a href="./index.html">ZombicideCustom</a></h1>
+    </header>
+    <section>
+        <article>
+            <h2>BossFight</h2>
+            <h3>Targets</h3>
+            <p>Objectives must be met in the following order</p>
+            <ol>
+                <li>Collect all targets. Kill the green and blue necromancer. Kill the monster</li>
+                <li>Destroy all spawns</li>
+                <li>At least one player must be in the red the other in the orange level</li>
+            </ol>
+            <h3>Special rules</h3>
+            <ul>
+                <li>Survivor gets 5 points for each objective</li>
+                <li>You roll a die when destroying a spawn (1-3 hit, 4-6 miss)</li>
+                <li>The monster can never disappear (it always spawns on center when killed)</li>
+                <li>Necromancer spawns work like normal spawns on necromancers, except there are no zombies to spawn</li>
+                <li>Blue and green doors can only be opened after killing two necromancers</li>
+                <li>Necromancer cannot spawn naturally (or remove their cards from the zombie card deck)</li>
+                <li>When a blue/green target is picked up, the blue/green necromancer in that necromancer spawn will automatically spawn (the necromancer goes to that colored zombie spawn)</li>
+                <li>Each boss (monster and necromancer) have double life and damage</li>
+            </ul>
+            <h3>Preparation</h3>
+            <ul>
+                <li>Games: Zombicide Black Plague, Zombicide Green Horde</li>
+            </ul>
+            <ol>
+                <li>Assemble the game plan 12V, 5R, 8V, 4R, 6R, 7R, 17V. 9V, 13R</li>
+                <li>Prepare tokens (spawn doors, etc.)</li>
+                <li>Prepare monster and trebuchet</li>
+                <li>Shuffle and prepare targets (1 blue 1 green + 3 red)</li>
+            </ol>
+            <img src="./frontend/images/bossfight.png" alt="BossFight map">
+            <br>
+            <a href="frontend/download/[CZ]BossFight.pdf" class="btn">BossFight - CZ</a> 
+            <a href="frontend/download/[EN]BossFight.pdf" class="btn">BossFight - EN</a>   
+        </article>
+    </section>
+    <footer>
+        <p>Zombicide Custom &copy; 2024 by KralicekGamer & JPac2202cz is licensed under CC BY-NC-ND 4.0</p>
+    </footer>
 </body>
-
 </html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,103 +7,96 @@
     <meta name="keywords" content="Zombicide, board game, custom maps, challenges, BossFight, NekroRush, tutorial, Car Drifting, Two Builds">
     <meta name="author" content="KralicekGamer">
     <title>Zombicide Custom</title>
-    <link rel="stylesheet" href="./frontend/css/style.css">
     <link rel="icon" type="image/x-icon" href="./frontend/images/icon.png">
+    <link rel="stylesheet" href="./frontend/css/style.css">
 </head>
-
-<body class="home">
-    <div class="web">
-        <div class="header" onclick="home()">
-            <h1>ZombicideCustom</h1>
-        </div>
-        <div class="wrapper">
-            <div class="wrapper-about-us">
-                <h2>About us</h2>
-                <p>
-                    Welcome to our world of Zombicide! We are a team of creative enthusiasts who specialize in creating
-                    scenarios for this amazing board game. We are the only ones in the world dedicated to this art, and
-                    our passion for Zombicide has brought us together for four years.
-                </p>
-                <p>
-                    Our stories are the product of years of friendship and shared experiences. A board game circle led
-                    us to this game, and we haven't stopped creating new and exciting scenarios since. We're here to
-                    take you into a world where survival depends on strategy, courage, and cooperation.
-                </p>
-                <p>
-                    Huge thanks to nmzi who created bgmapeditor for Zombicide which allowed us to do what we do.
-                </p>
-                <p>
-                    KralicekGamer & JPac2202cz
-                </p>
-            </div>
-            <div class="wrapper-book">
-                <h2>
-                    Book
-                </h2>
-                <p>
-                    We are excited to announce that our very own book, a collection of our published scenarios for the game Zombicide, is now available! You can download the PDF version directly from our website. If you prefer a physical copy, you can request the original for in-person use.
-                </p>
-                <p>
-                    Request:
-                    <a href="mailto:zombicide@kralyk.dev" target="_blank">
-                        zombicide@kralyk.dev
-                    </a>
-                </p>
-                <p>
-                    <a href="./frontend/download/[CZ]Zombicide-custom.pdf" target="_blank">
-                        Download PDF [CZ]
-                    </a>
-                </p>
-                <p>
-                    <a href="./frontend/download/[EN]Zombicide-custom.pdf" target="_blank">
-                        Download PDF [EN]
-                    </a>
-                </p>
-            </div>
-            <div class="wrapper-maps">
-                <h2>Our maps</h2>
-                <ol>
-                    <li class="wrapper-maps-click" data-url="tutorial.html">Tutorial</li>
-                    <li class="wrapper-maps-click" data-url="twobuilds.html">Two Builds</li>
-                    <li class="wrapper-maps-click" data-url="cardrifting.html">Car Drifting</li>
-                    <li class="wrapper-maps-click" data-url="pickyourchallenge.html">Pick Your Challenge</li>
-                    <li class="wrapper-maps-click" data-url="bossfight.html">Boss Fight</li>
-                    <li class="wrapper-maps-click" data-url="fightarena.html">Fight Arena</li>
-                </ol>
-            </div>
-            <div class="wrapper-socials">
-                <h2>
-                    Socials
-                </h2>
-                <a href="https://instagram.com/zombicide_custom" target="_blank">
-                    Instagram
+<body>
+    <header>
+        <h1><a href="./index.html">ZombicideCustom</a></h1>
+    </header>
+    <section>
+        <article>
+            <h2>About us</h2>
+            <p>
+                Welcome to our world of Zombicide! We are a team of creative enthusiasts who specialize in creating
+                scenarios for this amazing board game. We are the only ones in the world dedicated to this art, and
+                our passion for Zombicide has brought us together for four years.
+            </p>
+            <p>
+                Our stories are the product of years of friendship and shared experiences. A board game circle led
+                us to this game, and we haven't stopped creating new and exciting scenarios since. We're here to
+                take you into a world where survival depends on strategy, courage, and cooperation.
+            </p>
+            <p>
+                Huge thanks to nmzi who created bgmapeditor for Zombicide which allowed us to do what we do.
+            </p>
+            <p>
+                KralicekGamer & JPac2202cz
+            </p>
+        </article>
+        <article>
+            <h2>
+                Book
+            </h2>
+            <p>
+                We are excited to announce that our very own book, a collection of our published scenarios for the game
+                Zombicide, is now available! You can download the PDF version directly from our website. If you prefer a
+                physical copy, you can request the original for in-person use.
+            </p>
+            <p>
+                Request:
+                <a href="mailto:zombicide@kralyk.dev" target="_blank">
+                    zombicide@kralyk.dev
                 </a>
-                <a href="https://github.com/kralicekgamer/zombicide_custom" target="_blank">
-                    GitHub
+            </p>
+            <p>
+                <a href="./frontend/download/[CZ]ZombicideCustom.pdf" target="_blank">
+                    Download PDF [CZ]
                 </a>
-            </div>
-        </div>
-        <div class="footer">
-            <p>&copy; 2024 by KralicekGamer</p>
-        </div>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const clickableTexts = document.querySelectorAll('.wrapper-maps-click');
-
-            clickableTexts.forEach(text => {
-                text.addEventListener('click', () => {
-                    const url = text.getAttribute('data-url');
-                    window.location.href = url;
-                });
-            });
-        });
-    </script>
-    <script>
-        function home() {
-            window.location.href = 'index.html';
-        }
-    </script>
+            </p>
+            <p>
+                <a href="./frontend/download/[EN]ZombicideCustom.pdf" target="_blank">
+                    Download PDF [EN]
+                </a>
+            </p>
+        </article>
+        <article>
+            <h2>Our maps</h2>
+            <ol>
+                <li>
+                    <a href="./tutorial.html">Tutorial</a>
+                </li>
+                <li>
+                    <a href="./twobuilds.html">Two Builds</a>
+                </li>
+                <li>
+                    <a href="./cardrifting.html">Car Drifting</a>
+                </li>
+                <li>
+                    <a href="./pickyourchallenge.html">Pick Your Challenge</a>
+                </li>
+                <li>
+                    <a href="./bossfight.html">Boss Fight</a>
+                </li>
+                <li>
+                    <a href="./fightarena.html">Fight Arena</a>
+                </li>
+            </ol>
+        </article>
+        <article>
+            <h2>
+                Socials
+            </h2>
+            <a href="https://instagram.com/zombicide_custom" target="_blank">
+                Instagram
+            </a>
+            <a href="https://github.com/kralicekgamer/zombicide_custom" target="_blank">
+                GitHub
+            </a>
+        </article>
+    </section>
+    <footer>
+        <p>Zombicide Custom &copy; 2024 by KralicekGamer & JPac2202cz is licensed under CC BY-NC-ND 4.0</p>
+    </footer>
 </body>
-
 </html>

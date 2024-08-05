@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,76 +7,69 @@
     <meta name="keywords" content="Zombicide, board game, custom maps, challenges, BossFight, strategy">
     <meta name="author" content="KralicekGamer">
     <title>ZombicideCustom - NecroRush</title>
-    <link rel="stylesheet" href="./frontend/css/style.css">
     <link rel="icon" type="image/x-icon" href="./frontend/images/icon.png">
+    <link rel="stylesheet" href="./frontend/css/style.css">
 </head>
+<body>
+    <header>
+        <h1><a href="./index.html">ZombicideCustom</a></h1>
+    </header>
+    <section>
+        <article>
+            <h2>Fight Arena</h2>
+            <h3>Targets</h3>
+            <p>The goal of each team is to get 43 points</p>
 
-<body class="map-page">
-    <div class="web">
-        <div class="header" onclick="home()">
-            <h1>ZombicideCustom</h1>
-        </div>
-        <div class="wrapper">
-            <div class="wrapper-map">
-                <h2>Fight Arena</h2>
-                <h3>Targets</h3>
-                <p>The goal of each team is to get 43 points</p>
+            <h3>Special rules</h3>
+            <ul>
+                <li>When a player dies, it takes him one turn to respawn</li>
+                <li>The first team starts the first round and the second team starts the second round, etc.</li>
+            </ul>
+            <h3>Scoring</h3>
+            <ul>
+                <li>
+                    Killing a zombie: 1 point
+                </li>
+                <li>
+                    Killing a necromancer/monster: 3 points
+                </li>
+                <li>
+                    Target: 5 points
+                </li>
+                <li>
+                    Player:
+                    <ul>
+                        <li>
+                            1 wound 5 points
+                        </li>
+                        <li>
+                            Multiple wounds points
+                        </li>
+                        <li>
+                            Whole team 10 points
+                        </li>
+                    </ul>
+                </li>
+            </ul>
 
-                <h3>Special rules</h3>
-                <ul>
-                    <li>When a player dies, it takes him one turn to respawn</li>
-                    <li>The first team starts the first round and the second team starts the second round, etc.</li>
-                </ul>
-                <h3>Scoring</h3>
-                <ul>
-                    <li>
-                        Killing a zombie: 1 point
-                    </li>
-                    <li>
-                        Killing a necromancer/monster: 3 points
-                    </li>
-                    <li>
-                        Target: 5 points
-                    </li>
-                    <li>
-                        Player:
-                        <ul>
-                            <li>
-                                1 wound 5 points
-                            </li>
-                            <li>
-                                Multiple wounds points
-                            </li>
-                            <li>
-                                Whole team 10 points
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h3>Preparation</h3>
-                <ul>
-                    <li>Games: Zombicide 2nd edition</li>
-                </ul>
-                <ol>
-                    <li>Make a game plan 3R, 6R, 8R, 9R</li>
-                    <li>Prepare tokens (spawn doors, etc.)</li>
-                    <li>Assemble the crates with spoiled toys according to the plan</li>
-                </ol>
-                <img src="./frontend/images/fightarena.png" alt="Fight Arena map">
-                <a href="frontend/download/[CZ]FightArena.pdf" download>Fight Arena - CZ</a>
-                <a href="frontend/download/[EN]FightArena.pdf" download>Fight Arena - EN</a>
-            </div>
-        </div>
-        <div class="footer">
-            <p>&copy; 2024 by KralicekGamer</p>
-        </div>
+            <h3>Preparation</h3>
+            <ul>
+                <li>Games: Zombicide 2nd edition</li>
+            </ul>
+            <ol>
+                <li>Make a game plan 3R, 6R, 8R, 9R</li>
+                <li>Prepare tokens (spawn doors, etc.)</li>
+                <li>Assemble the crates with spoiled toys according to the plan</li>
+            </ol>
+            <img src="./frontend/images/fightarena.png" alt="Fight Arena map">
+            <br>
+            <a href="frontend/download/[CZ]FightArena.pdf" class="btn">Fight Arena - CZ</a>
+            <a href="frontend/download/[EN]FightArena.pdf" class="btn">Fight Arena - EN</a>
+        </article>
+    </section>
+    <footer>
+        <p>Zombicide Custom &copy; 2024 by KralicekGamer & JPac2202cz is licensed under CC BY-NC-ND 4.0</p>
+    </footer>
     </div>
-    <script>
-        function home() {
-            window.location.href = 'index.html';
-        }
-    </script>
 </body>
-
 </html>
