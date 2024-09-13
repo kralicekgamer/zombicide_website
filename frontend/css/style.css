@@ -1,9 +1,9 @@
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    font-family: "Poppins";
 }
 
 header {
@@ -68,14 +68,17 @@ article li {
     padding: 0.5rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+}
+
+#scenare li {
     cursor: pointer;
 }
 
-article li:hover {
+#scenare li:hover {
     background-color: #f1f1f1;
 }
 
-article a {
+#scenare a {
     cursor: pointer;
     text-decoration: none;
     margin: 1rem 0;
@@ -85,7 +88,7 @@ article a {
     transition: background-color 0.3s ease;
 }
 
-article a:hover {
+#scenare a:hover {
     background-color: #f1f1f1;
 }
 
@@ -125,7 +128,9 @@ article img {
     margin-top: 1rem;
 }
 
-
+#signature {
+    font-family: "Sofia";    
+}
 
 @media (max-width: 768px) {
     section {
