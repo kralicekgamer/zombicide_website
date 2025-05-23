@@ -1,4 +1,3 @@
-// Create animated particles
 function createParticles() {
     const particlesContainer = document.getElementById('particles');
     const particleCount = 30;
@@ -14,5 +13,4 @@ function createParticles() {
     }
 }
 
-// Initialize particles when page loads
 document.addEventListener('DOMContentLoaded', createParticles);

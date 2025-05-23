@@ -24,7 +24,6 @@ body {
     min-height: 100vh;
 }
 
-/* Animated background particles */
 .particles {
     position: fixed;
     top: 0;
@@ -56,7 +55,6 @@ body {
     }
 }
 
-/* Header Styles */
 .navbar {
     background: rgba(13, 17, 23, 0.95) !important;
     backdrop-filter: blur(10px);
@@ -77,7 +75,6 @@ body {
     text-shadow: 0 0 30px rgba(220, 38, 38, 0.8);
 }
 
-/* Hero Section */
 .hero {
     min-height: 60vh;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
@@ -124,13 +121,11 @@ body {
     margin-bottom: 2rem;
 }
 
-/* Main content */
 .main-content {
     padding-top: 120px;
     padding-bottom: 60px;
 }
 
-/* Card Styles */
 .custom-card {
     background: rgba(22, 27, 34, 0.8);
     border: 1px solid var(--border-color);
@@ -180,7 +175,6 @@ body {
     font-size: 1.5rem;
 }
 
-/* Scenario specific cards */
 .scenario-card {
     background: rgba(22, 27, 34, 0.9);
     border: 1px solid var(--border-color);
@@ -245,7 +239,6 @@ body {
     gap: 0.5rem;
 }
 
-/* Lists */
 .maps-list {
     list-style: none;
     padding: 0;
@@ -385,7 +378,6 @@ body {
     margin-right: 0.5rem;
 }
 
-/* Special sections */
 .game-setup {
     background: rgba(168, 85, 247, 0.1);
     border: 1px solid rgba(168, 85, 247, 0.3);
@@ -411,7 +403,6 @@ body {
     100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
 }
 
-/* Images */
 .map-image {
     max-width: 100%;
     height: auto;
@@ -425,7 +416,6 @@ body {
     transform: scale(1.02);
 }
 
-/* Buttons */
 .download-btn {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -491,7 +481,6 @@ body {
     box-shadow: 0 10px 25px rgba(220, 38, 38, 0.3);
 }
 
-/* Social links */
 .social-link {
     display: inline-block;
     padding: 0.8rem 1.5rem;
@@ -525,7 +514,6 @@ body {
     border-radius: 15px;
 }
 
-/* Footer */
 .footer {
     background: var(--primary-dark);
     border-top: 2px solid var(--accent-red);
@@ -541,7 +529,6 @@ body {
     margin: 1rem 0;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
