@@ -3,57 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ZombicideCustom - BossFight map and challenge for the Zombicide board game. Engage in epic battles and test your strategies.">
-    <meta name="keywords" content="Zombicide, board game, custom maps, challenges, BossFight, strategy">
+    <meta name="description" content="ZombicideCustom - Car Drifting map and challenge for the Zombicide board game. Navigate through streets and test your driving skills.">
+    <meta name="keywords" content="Zombicide, board game, custom maps, challenges, Car Drifting, strategy">
     <meta name="author" content="KralicekGamer">
-    <title>ZombicideCustom - CarDrifting</title>
+    <title>ZombicideCustom - Car Drifting</title>
     <link rel="icon" type="image/x-icon" href="./frontend/images/icon.png">
-    <link rel="stylesheet" href="./frontend/css/style.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./frontend/css/style.css">
 </head>
 <body>
-    <header>
-        <h1><a href="./index.html">ZombicideCustom</a></h1>
-    </header>
-    <section>
-        <article>
-            <h2>Car Drifting</h2>
-            <h3>Targets</h3>
-            <p>Objectives must be met in the following order</p>
-            <ol>
-                <li>Collect the green and blue targets</li>
-                <li>Destroy the blue and green spawn with the blue and green objective</li>
-                <li>
-                    Go to exit
-                </li>
-            </ol>
+    <!-- Animated background particles -->
+    <div class="particles" id="particles"></div>
 
-            <h3>Special rules</h3>
-            <ul>
-                <li>Survivor scores 5 for each target.</li>
-                <li>Green and blue doors can be opened after both spawns are destroyed</li>
-            </ul>
+    <!-- Back to home button -->
+    <a href="./index.html" class="back-btn" title="Back to Home">
+        <i class="fas fa-home"></i>
+    </a>
 
-            <h3>Preparation</h3>
-            <ul>
-                <li>Games: Zombicide 2nd edition</li>
-            </ul>
-            <ol>
-                <li>Set up the game plan 1R, 7V, 2R, 3R, 9R, 4R, 6R, 8R, 5R</li>
-                <li>Prepare tokens (spawn doors, etc.)</li>
-                <li>Prepare the objective</li>
-            </ol>
-            <img src="./frontend/images/cardrifting.webp" alt="Car Drifting map">
-            <p>Graphic elements © Guillotine Games.</p>
-            <br>
-            <a href="frontend/download/[CZ]CarDrifting.pdf" class="btn">Car Drifting - CZ</a>
-            <a href="frontend/download/[EN]CarDrifting.pdf" class="btn">Car Drifting - EN</a>
-        </article>
-    </section>
-    <footer>
-        <p>Zombicide Custom &copy; 2024 by KralicekGamer & JPac2202cz is licensed under GNU-GPL 3.0</p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <i class="fas fa-skull"></i> ZombicideCustom
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="scenario-card">
+                        <div class="card-body p-4">
+                            <h1 class="scenario-title">
+                                <i class="fas fa-car"></i>
+                                Car Drifting
+                            </h1>
+
+                            <!-- Targets Section -->
+                            <div class="section-card">
+                                <h3 class="section-title">
+                                    <i class="fas fa-bullseye"></i>
+                                    Targets
+                                </h3>
+                                <p class="mb-3"><strong>Objectives must be met in the following order:</strong></p>
+                                
+                                <ol class="objectives-list">
+                                    <li><strong>Collect the green and blue targets</strong></li>
+                                    <li><strong>Destroy the blue and green spawn</strong> with the blue and green objective</li>
+                                    <li><strong>Go to exit</strong></li>
+                                </ol>
+                            </div>
+
+                            <!-- Special Rules Section -->
+                            <div class="section-card">
+                                <h3 class="section-title">
+                                    <i class="fas fa-cogs"></i>
+                                    Special Rules
+                                </h3>
+                                <ul class="rules-list">
+                                    <li>Survivor scores <strong>5 points</strong> for each target.</li>
+                                    <li><strong>Green and blue doors</strong> can be opened after both spawns are destroyed.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Preparation Section -->
+                            <div class="section-card">
+                                <h3 class="section-title">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    Preparation
+                                </h3>
+                                
+                                <div class="game-setup">
+                                    <h5 class="text-warning">
+                                        <i class="fas fa-gamepad me-2"></i>
+                                        Required Game: Zombicide 2nd Edition
+                                    </h5>
+                                </div>
+
+                                <ol class="preparation-list">
+                                    <li>Set up the game plan: <strong>1R, 7V, 2R, 3R, 9R, 4R, 6R, 8R, 5R</strong></li>
+                                    <li>Prepare tokens (spawn doors, etc.)</li>
+                                    <li>Prepare the objective</li>
+                                </ol>
+                            </div>
+
+                            <!-- Map Image -->
+                            <div class="text-center">
+                                <img src="./frontend/images/cardrifting.webp" alt="Car Drifting map" class="map-image">
+                                <p class="copyright-notice">Graphic elements © Guillotine Games.</p>
+                            </div>
+
+                            <!-- Download Section -->
+                            <div class="download-section">
+                                <h4 class="text-center mb-3">
+                                    <i class="fas fa-download me-2"></i>
+                                    Download Scenario
+                                </h4>
+                                <a href="frontend/download/[CZ]CarDrifting.pdf" class="download-btn">
+                                    <i class="fas fa-file-pdf me-2"></i>Car Drifting - CZ
+                                </a>
+                                <a href="frontend/download/[EN]CarDrifting.pdf" class="download-btn">
+                                    <i class="fas fa-file-pdf me-2"></i>Car Drifting - EN
+                                </a>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <a href="./index.html" class="btn btn-outline-danger btn-lg">
+                                    <i class="fas fa-arrow-left me-2"></i>
+                                    Back to Home
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">
+                        <i class="fas fa-skull me-2"></i>
+                        Zombicide Custom &copy; 2024 by KralicekGamer & JPac2202cz is licensed under GNU-GPL 3.0
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./frontend/js/script.js"></script>
 </body>
 </html>

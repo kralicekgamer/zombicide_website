@@ -3,59 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ZombicideCustom - BossFight map and challenge for the Zombicide board game. Engage in epic battles and test your strategies.">
-    <meta name="keywords" content="Zombicide, board game, custom maps, challenges, BossFight, strategy">
+    <meta name="description" content="ZombicideCustom - Tutorial map and challenge for the Zombicide board game. Learn the basics and test your strategies.">
+    <meta name="keywords" content="Zombicide, board game, custom maps, challenges, Tutorial, strategy">
     <meta name="author" content="KralicekGamer">
     <title>ZombicideCustom - Tutorial</title>
     <link rel="icon" type="image/x-icon" href="./frontend/images/icon.png">
-    <link rel="stylesheet" href="./frontend/css/style.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./frontend/css/style.css">
 </head>
 <body>
-    <header>
-        <h1><a href="./index.html">ZombicideCustom</a></h1>
-    </header>
-    <section>
-        <article>
-            <h2>Tutorial</h2>
-            <h3>Targets</h3>
-            <p>Objectives must be met in the following order</p>
-            <ol>
-                <li>Collect the green target</li>
-                <li>Break the door</li>
-                <li>
-                    Go to exit
-                </li>
-            </ol>
+    <!-- Animated background particles -->
+    <div class="particles" id="particles"></div>
 
-            <h3>Special rules</h3>
-            <ul>
-                <li>Survivor gets 5 points for each objective.</li>
-                <li>The green door can only be opened after the objective is obtained</li>
-                <li>Necromancer cannot spawn</li>
-            </ul>
+    <!-- Back to home button -->
+    <a href="./index.html" class="back-btn" title="Back to Home">
+        <i class="fas fa-home"></i>
+    </a>
 
-            <h3>Preparation</h3>
-            <ul>
-                <li>Games: Zombicide 2nd edition</li>
-            </ul>
-            <ol>
-                <li>Assemble the game plan 3R, 6R, 8R, 9R</li>
-                <li>Prepare tokens (spawn doors, etc.)</li>
-                <li>Prepare the objective</li>
-            </ol>
-            <img src="./frontend/images/tutorial.webp" alt="Tutorial map">
-            <p>Graphic elements © Guillotine Games.</p>
-            <br>
-            <a href="frontend/download/[CZ]Tutorial.pdf" class="btn">Tutorial - CZ</a>
-            <a href="frontend/download/[EN]Tutorial.pdf" class="btn">Tutorial - EN</a>
-        </article>
-    </section>
-    <footer>
-        <p>Zombicide Custom &copy; 2024 by KralicekGamer & JPac2202cz is licensed under GNU-GPL 3.0</p>
-    </footer>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <i class="fas fa-skull"></i> ZombicideCustom
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="scenario-card">
+                        <div class="card-body p-4">
+                            <h1 class="scenario-title">
+                                <i class="fas fa-graduation-cap"></i>
+                                Tutorial
+                            </h1>
+
+                            <!-- Targets Section -->
+                            <div class="section-card">
+                                <h3 class="section-title">
+                                    <i class="fas fa-bullseye"></i>
+                                    Targets
+                                </h3>
+                                <p class="mb-3"><strong>Objectives must be met in the following order:</strong></p>
+                                
+                                <ol class="objectives-list">
+                                    <li><strong>Collect the green target</strong></li>
+                                    <li><strong>Break the door</strong></li>
+                                    <li><strong>Go to exit</strong></li>
+                                </ol>
+                            </div>
+
+                            <!-- Special Rules Section -->
+                            <div class="section-card">
+                                <h3 class="section-title">
+                                    <i class="fas fa-cogs"></i>
+                                    Special Rules
+                                </h3>
+                                <ul class="rules-list">
+                                    <li>Survivor gets <strong>5 points</strong> for each objective.</li>
+                                    <li>The <strong>green door</strong> can only be opened after the objective is obtained.</li>
+                                    <li><strong>Necromancer</strong> cannot spawn.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Preparation Section -->
+                            <div class="section-card">
+                                <h3 class="section-title">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    Preparation
+                                </h3>
+                                
+                                <div class="game-setup">
+                                    <h5 class="text-warning">
+                                        <i class="fas fa-gamepad me-2"></i>
+                                        Required Game: Zombicide 2nd Edition
+                                    </h5>
+                                </div>
+
+                                <ol class="preparation-list">
+                                    <li>Set up the game plan: <strong>3R, 6R, 8R, 9R</strong></li>
+                                    <li>Prepare tokens (spawn doors, etc.)</li>
+                                    <li>Prepare the objective</li>
+                                </ol>
+                            </div>
+
+                            <!-- Map Image -->
+                            <div class="text-center">
+                                <img src="./frontend/images/tutorial.webp" alt="Tutorial map" class="map-image">
+                                <p class="copyright-notice">Graphic elements © Guillotine Games.</p>
+                            </div>
+
+                            <!-- Download Section -->
+                            <div class="download-section">
+                                <h4 class="text-center mb-3">
+                                    <i class="fas fa-download me-2"></i>
+                                    Download Scenario
+                                </h4>
+                                <a href="frontend/download/[CZ]Tutorial.pdf" class="download-btn">
+                                    <i class="fas fa-file-pdf me-2"></i>Tutorial - CZ
+                                </a>
+                                <a href="frontend/download/[EN]Tutorial.pdf" class="download-btn">
+                                    <i class="fas fa-file-pdf me-2"></i>Tutorial - EN
+                                </a>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <a href="./index.html" class="btn btn-outline-danger btn-lg">
+                                    <i class="fas fa-arrow-left me-2"></i>
+                                    Back to Home
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">
+                        <i class="fas fa-skull me-2"></i>
+                        Zombicide Custom &copy; 2024 by KralicekGamer & JPac2202cz is licensed under GNU-GPL 3.0
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./frontend/js/script.js"></script>
 </body>
 </html>

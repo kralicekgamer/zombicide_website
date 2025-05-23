@@ -8,55 +8,151 @@
     <meta name="author" content="KralicekGamer">
     <title>ZombicideCustom - BossFight</title>
     <link rel="icon" type="image/x-icon" href="./frontend/images/icon.png">
-    <link rel="stylesheet" href="./frontend/css/style.css">    
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./frontend/css/style.css">
 </head>
 <body>
-    <header>
-        <h1><a href="./index.html">ZombicideCustom</a></h1>
-    </header>
-    <section>
-        <article>
-            <h2>BossFight</h2>
-            <h3>Targets</h3>
-            <p>Objectives must be met in the following order</p>
-            <ol>
-                <li>Collect all targets. Kill the green and blue necromancer. Kill the monster</li>
-                <li>Destroy all spawns</li>
-                <li>At least one player must be in the red the other in the orange level</li>
-            </ol>
-            <h3>Special rules</h3>
-            <ul>
-                <li>Survivor gets 5 points for each objective</li>
-                <li>You roll a die when destroying a spawn (1-3 hit, 4-6 miss)</li>
-                <li>The monster can never disappear (it always spawns on center when killed)</li>
-                <li>Necromancer spawns work like normal spawns on necromancers, except there are no zombies to spawn</li>
-                <li>Blue and green doors can only be opened after killing two necromancers</li>
-                <li>Necromancer cannot spawn naturally (or remove their cards from the zombie card deck)</li>
-                <li>When a blue/green target is picked up, the blue/green necromancer in that necromancer spawn will automatically spawn (the necromancer goes to that colored zombie spawn)</li>
-                <li>Each boss (monster and necromancer) have double life and damage</li>
-            </ul>
-            <h3>Preparation</h3>
-            <ul>
-                <li>Games: Zombicide Black Plague, Zombicide Green Horde</li>
-            </ul>
-            <ol>
-                <li>Assemble the game plan 12V, 5R, 8V, 4R, 6R, 7R, 17V. 9V, 13R</li>
-                <li>Prepare tokens (spawn doors, etc.)</li>
-                <li>Prepare monster and trebuchet</li>
-                <li>Shuffle and prepare targets (1 blue 1 green + 3 red)</li>
-            </ol>
-            <img src="./frontend/images/bossfight.webp" alt="BossFight map">
-            <p>Graphic elements © Guillotine Games.</p>
-            <br>
-            <a href="frontend/download/[CZ]BossFight.pdf" class="btn">BossFight - CZ</a> 
-            <a href="frontend/download/[EN]BossFight.pdf" class="btn">BossFight - EN</a>   
-        </article>
-    </section>
-    <footer>
-        <p>Zombicide Custom &copy; 2024 by KralicekGamer & JPac2202cz is licensed under GNU-GPL 3.0</p>
+    <!-- Animated background particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Back to home button -->
+    <a href="./index.html" class="back-btn" title="Back to Home">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <i class="fas fa-skull"></i> ZombicideCustom
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="scenario-card">
+                        <div class="card-body p-4">
+                            <h1 class="scenario-title">
+                                <i class="fas fa-dragon"></i>
+                                BossFight
+                            </h1>
+
+                            <!-- Targets Section -->
+                            <div class="section-card">
+                                <h3 class="section-title">
+                                    <i class="fas fa-bullseye"></i>
+                                    Targets
+                                </h3>
+                                <p class="mb-3"><strong>Objectives must be met in the following order:</strong></p>
+                                
+                                <ol class="objectives-list">
+                                    <li><strong>Collect all targets.</strong> Kill the green and blue necromancer. Kill the monster</li>
+                                    <li><strong>Destroy all spawns</strong></li>
+                                    <li><strong>At least one player must be in the red the other in the orange level</strong></li>
+                                </ol>
+                            </div>
+
+                            <!-- Special Rules Section -->
+                            <div class="section-card">
+                                <h3 class="section-title">
+                                    <i class="fas fa-cogs"></i>
+                                    Special Rules
+                                </h3>
+                                <ul class="rules-list">
+                                    <li>Survivor gets <strong>5 points</strong> for each objective.</li>
+                                    <li>You roll a die when destroying a spawn (<strong>1-3 hit, 4-6 miss</strong>).</li>
+                                    <li>The monster can <strong>never disappear</strong> (it always spawns on center when killed).</li>
+                                    <li>Necromancer spawns work like normal spawns on necromancers, except <strong>there are no zombies to spawn</strong>.</li>
+                                    <li><strong>Blue and green doors</strong> can only be opened after killing two necromancers.</li>
+                                    <li>Necromancer cannot spawn naturally (or <strong>remove their cards from the zombie card deck</strong>).</li>
+                                    <li>When a blue/green target is picked up, the blue/green necromancer in that necromancer spawn will <strong>automatically spawn</strong> (the necromancer goes to that colored zombie spawn).</li>
+                                    <li>Each boss (monster and necromancer) have <strong>double life and damage</strong>.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Preparation Section -->
+                            <div class="section-card">
+                                <h3 class="section-title">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    Preparation
+                                </h3>
+                                
+                                <div class="game-setup">
+                                    <h5 class="text-warning">
+                                        <i class="fas fa-gamepad me-2"></i>
+                                        Required Games: Zombicide Black Plague, Zombicide Green Horde
+                                    </h5>
+                                </div>
+
+                                <ol class="preparation-list">
+                                    <li>Assemble the game plan: <strong>12V, 5R, 8V, 4R, 6R, 7R, 17V, 9V, 13R</strong></li>
+                                    <li>Prepare tokens (spawn doors, etc.)</li>
+                                    <li>Prepare monster and trebuchet</li>
+                                    <li>Shuffle and prepare targets (1 blue 1 green + 3 red)</li>
+                                </ol>
+                            </div>
+
+                            <!-- Map Image -->
+                            <div class="text-center">
+                                <img src="./frontend/images/bossfight.webp" alt="BossFight map" class="map-image">
+                                <p class="copyright-notice">Graphic elements © Guillotine Games.</p>
+                            </div>
+
+                            <!-- Download Section -->
+                            <div class="download-section">
+                                <h4 class="text-center mb-3">
+                                    <i class="fas fa-download me-2"></i>
+                                    Download Scenario
+                                </h4>
+                                <a href="frontend/download/[CZ]BossFight.pdf" class="download-btn">
+                                    <i class="fas fa-file-pdf me-2"></i>BossFight - CZ
+                                </a>
+                                <a href="frontend/download/[EN]BossFight.pdf" class="download-btn">
+                                    <i class="fas fa-file-pdf me-2"></i>BossFight - EN
+                                </a>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <a href="./index.html" class="btn btn-outline-danger btn-lg">
+                                    <i class="fas fa-arrow-left me-2"></i>
+                                    Back to Home
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">
+                        <i class="fas fa-skull me-2"></i>
+                        Zombicide Custom &copy; 2024 by KralicekGamer & JPac2202cz is licensed under GNU-GPL 3.0
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./frontend/js/script.js"></script>
 </body>
 </html>

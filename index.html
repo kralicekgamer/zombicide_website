@@ -8,109 +8,167 @@
     <meta name="author" content="KralicekGamer">
     <title>Zombicide Custom</title>
     <link rel="icon" type="image/x-icon" href="./frontend/images/icon.png">
-    <link rel="stylesheet" href="./frontend/css/style.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Style -->
+     <link rel="stylesheet" href="./frontend/css/style.css">
 </head>
 <body>
-    <header>
-        <h1><a href="./index.html">ZombicideCustom</a></h1>
-    </header>
-    <section>
-        <article>
-            <h2>About us</h2>
-            <p>
-                <strong>This site is not an official site of Guillotine Games, Zombicide or CMON. The site is a fan site only. See terms, legal and license <a href="./license.html">here</a></strong>
-            </p>
-            <p>
-                Welcome to our world of Zombicide! We are a team of creative enthusiasts who specialize in creating
-                scenarios for this amazing board game. We are the only ones in the world dedicated to this art, and
-                our passion for Zombicide has brought us together for four years.
-            </p>
-            <p>
-                Our stories are the product of years of friendship and shared experiences. A board game circle led
-                us to this game, and we haven't stopped creating new and exciting scenarios since. We're here to
-                take you into a world where survival depends on strategy, courage, and cooperation.
-            </p>
-            <p>
-                Huge thanks to nmzi who created bgmapeditor for Zombicide which allowed us to do what we do.
-            </p>
-            <p id="signature">
-                KralicekGamer & JPac2202cz
-            </p>
-        </article>
-        <article>
-            <h2>
-                Book
-            </h2>
-            <p>
-                We are excited to announce that our very own book, a collection of our published scenarios for the game
-                Zombicide, is now available! You can download the PDF version directly from our website. If you prefer a
-                physical copy, you can request the original for in-person use.
-            </p>
-            <p>
-                Request:
-                <a href="mailto:kralicekgamer@gmail.com" target="_blank">
-                    kralicekgamer@gmail.com
-                </a>
-            </p>
-            <p>
-                <a href="./frontend/download/[CZ]ZombicideCustom.pdf" target="_blank">
-                    Download PDF [CZ]
-                </a>
-            </p>
-            <p>
-                <a href="./frontend/download/[EN]ZombicideCustom.pdf" target="_blank">
-                    Download PDF [EN]
-                </a>
-            </p>
-        </article>
-        <article id="scenare">
-            <h2>Our maps</h2>
-            <ol>
-                <li>
-                    <a href="./tutorial.html">Tutorial</a>
-                </li>
-                <li>
-                    <a href="./twobuilds.html">Two Builds</a>
-                </li>
-                <li>
-                    <a href="./cardrifting.html">Car Drifting</a>
-                </li>
-                <li>
-                    <a href="./pickyourchallenge.html">Pick Your Challenge</a>
-                </li>
-                <li>
-                    <a href="./bossfight.html">Boss Fight</a>
-                </li>
-                <li>
-                    <a href="./fightarena.html">Fight Arena</a>
-                </li>
-            </ol>
-        </article>
-        <article>
-            <h2>
-                BGMapEditor - our modified version
-            </h2>
-            <p>
-                We have created a modified version of the original bgmapeditor. It contains various bux fixes, more languages and an installation wizard
-            </p>
-            <a href="https://github.com/kralicekgamer/bgmapeditor" target="_blank">GitHub</a>
-        </article>
-        <article>
-            <h2>
-                Socials
-            </h2>
-            <p>
-                <a href="https://instagram.com/zombicide_custom" target="_blank">
-                    Instagram
-                </a>
-            </p>
-        </article>
+    <!-- Animated background particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <i class="fas fa-skull"></i> ZombicideCustom
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 hero-content"></div>
+                    <h1 class="mt-5">Survive the Apocalypse</h1>
+                    <p class="lead">Discover custom maps and challenges for Zombicide. Experience new adventures and enhance your gameplay with our unique scenarios.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-        <p>Zombicide Custom &copy; 2024 by KralicekGamer & JPac2202cz is licensed under GNU-GPL 3.0</p>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+        <!-- Warning Banner -->
+        <div class="warning-banner">
+            <i class="fas fa-exclamation-triangle me-2"></i>
+            <strong>This site is not an official site of Guillotine Games, Zombicide or CMON. The site is a fan site only.</strong>
+            <a href="./license.html" class="text-white ms-2">See terms, legal and license here</a>
+        </div>
+
+        <div class="row g-4">
+            <!-- About Us -->
+            <div class="col-lg-6">
+                <div class="custom-card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            <i class="fas fa-users"></i>
+                            About Us
+                        </h2>
+                        <p>Welcome to our world of Zombicide! We are a team of creative enthusiasts who specialize in creating scenarios for this amazing board game. We are the only ones in the world dedicated to this art, and our passion for Zombicide has brought us together for four years.</p>
+                        <p>Our stories are the product of years of friendship and shared experiences. A board game circle led us to this game, and we haven't stopped creating new and exciting scenarios since.</p>
+                        <p class="mb-0">Huge thanks to nmzi who created bgmapeditor for Zombicide which allowed us to do what we do.</p>
+                        <div class="text-end mt-3">
+                            <em class="text-muted">KralicekGamer & JPac2202cz</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book Section -->
+            <div class="col-lg-6">
+                <div class="custom-card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            <i class="fas fa-book"></i>
+                            Our Book
+                        </h2>
+                        <p>We are excited to announce that our very own book, a collection of our published scenarios for the game Zombicide, is now available! You can download the PDF version directly from our website.</p>
+                        <p>
+                            <strong>Request physical copy:</strong><br>
+                            <a href="mailto:kralicekgamer@gmail.com" class="text-decoration-none" style="color: var(--accent-red);">
+                                <i class="fas fa-envelope me-1"></i>
+                                kralicekgamer@gmail.com
+                            </a>
+                        </p>
+                        <div class="text-center">
+                            <a href="./frontend/download/[CZ]ZombicideCustom.pdf" target="_blank" class="download-btn">
+                                <i class="fas fa-download me-2"></i>Download PDF [CZ]
+                            </a>
+                            <a href="./frontend/download/[EN]ZombicideCustom.pdf" target="_blank" class="download-btn">
+                                <i class="fas fa-download me-2"></i>Download PDF [EN]
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maps Section -->
+            <div class="col-lg-8">
+                <div class="custom-card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            <i class="fas fa-map"></i>
+                            Our Maps
+                        </h2>
+                        <ol class="maps-list">
+                            <li><a href="./tutorial.html"><span><i class="fas fa-graduation-cap me-2"></i>Tutorial</span></a></li>
+                            <li><a href="./twobuilds.html"><span><i class="fas fa-building me-2"></i>Two Builds</span></a></li>
+                            <li><a href="./cardrifting.html"><span><i class="fas fa-car me-2"></i>Car Drifting</span></a></li>
+                            <li><a href="./pickyourchallenge.html"><span><i class="fas fa-dice me-2"></i>Pick Your Challenge</span></a></li>
+                            <li><a href="./bossfight.html"><span><i class="fas fa-dragon me-2"></i>Boss Fight</span></a></li>
+                            <li><a href="./fightarena.html"><span><i class="fas fa-fist-raised me-2"></i>Fight Arena</span></a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Social -->
+            <div class="col-lg-4">
+                <div class="custom-card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            <i class="fas fa-tools"></i>
+                            BGMapEditor
+                        </h2>
+                        <p>We have created a modified version of the original bgmapeditor. It contains various bug fixes, more languages and an installation wizard.</p>
+                        <a href="https://github.com/kralicekgamer/bgmapeditor" target="_blank" class="social-link github">
+                            <i class="fab fa-github me-2"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="custom-card">
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            <i class="fas fa-share-alt"></i>
+                            Follow Us
+                        </h2>
+                        <p>Stay updated with our latest maps and content!</p>
+                        <a href="https://instagram.com/zombicide_custom" target="_blank" class="social-link">
+                            <i class="fab fa-instagram me-2"></i>Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">
+                        <i class="fas fa-skull me-2"></i>
+                        Zombicide Custom &copy; 2024 by KralicekGamer & JPac2202cz is licensed under GNU-GPL 3.0
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./frontend/js/script.js"></script>
 </body>
 </html>
